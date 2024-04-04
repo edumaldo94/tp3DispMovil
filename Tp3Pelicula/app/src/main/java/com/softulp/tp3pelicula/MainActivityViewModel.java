@@ -35,7 +35,7 @@ public class MainActivityViewModel  extends AndroidViewModel {
     }
     public void cargarDatos(){
         listaBC.add(new Pelicula("Hombre en llamas","Contratado como guardaespaldas de una niña, un agente retirado de la CIA se venga de sus secuestradores en México.","Tony Scott", "densei washintong", R.drawable.hombreenllama));
-
+        listaBC.add(new Pelicula("Madagascar","Un grupo de animales que pasaron toda su vida en un zoológico de Nueva York terminan por error en la selva de Madagascar y no tienen más remedio que aprender a sobrevivir en la naturaleza."," Tom McGrath, Eric Darnell", "Ben Stiller, Tom McGrath", R.drawable.madagas));
     }
 
 }

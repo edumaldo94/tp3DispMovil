@@ -5,11 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="10dp"
-    app:cardBackgroundColor="#E91E63"
+    app:cardBackgroundColor="#E4DDD2D6"
     app:cardCornerRadius="15dp"
     app:cardElevation="10dp"
-    app:contentPadding="10dp"
-    >
+    app:contentPadding="10dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -42,13 +41,13 @@
             android:id="@+id/idDescripcion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="Descripcion"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/idFoto"
-            app:layout_constraintVertical_bias="0.077" />
+            app:layout_constraintVertical_bias="0.234" />
 
         <Button
             android:id="@+id/btndetalle"
@@ -57,31 +56,25 @@
             android:text="detalle"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/idDescripcion"
-            app:layout_constraintVertical_bias="0.785" />
+            app:layout_constraintVertical_bias="0.935" />
+
+
+
+
 
         <TextView
-            android:id="@+id/idDirector"
-            android:layout_width="match_parent"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="56dp"
-            android:text="TextView"
+            android:text="Descripción"
+            app:layout_constraintBottom_toTopOf="@+id/idDescripcion"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/idDescripcion" />
+            app:layout_constraintTop_toBottomOf="@+id/idFoto"
+            app:layout_constraintVertical_bias="0.636" />
 
-        <TextView
-            android:id="@+id/idActor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            app:layout_constraintBottom_toTopOf="@+id/btndetalle"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/idDirector"
-            app:layout_constraintVertical_bias="0.317" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

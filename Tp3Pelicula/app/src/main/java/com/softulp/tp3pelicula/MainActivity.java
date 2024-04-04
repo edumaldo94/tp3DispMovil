@@ -33,7 +33,7 @@ private ActivityMainBinding binding;
         vm.getMutableAdapter().observe(this, new Observer<RecyclerView.Adapter<PeliculaAdapter.ViewHolderPepe>>() {
             @Override
             public void onChanged(RecyclerView.Adapter<PeliculaAdapter.ViewHolderPepe> viewHolderPepeAdapter) {
-                GridLayoutManager glm = new GridLayoutManager(MainActivity.this, 1, GridLayoutManager.HORIZONTAL, false);
+                GridLayoutManager glm = new GridLayoutManager(MainActivity.this, 1, GridLayoutManager.VERTICAL, false);
                 binding.recyclerView.setLayoutManager(glm);
                 binding.recyclerView.setAdapter(viewHolderPepeAdapter);
             }
